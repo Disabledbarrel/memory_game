@@ -1,0 +1,19 @@
+// Smartphones
+@include phone {
+    .main-header {
+        font-size: 0.5em;
+        text-align: center;
+    }
+
+    .memory-game {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        .memory-card {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    
+}

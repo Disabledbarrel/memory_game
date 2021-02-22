@@ -1,0 +1,74 @@
+.score-board {
+    display: flex;
+    justify-content: center;
+
+    .game-info {
+        font-size: 2em;
+        margin: auto 1em auto 1em;
+        
+    }
+
+}
+#times-up {
+    font-size: 2em;
+    text-align: center;
+    width: 50%;
+    margin: auto auto;
+    background-color: $header-color;
+    border: 1px solid $dark-color;
+    display: none;
+}
+
+.memory-game {
+    padding: 0px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    perspective: 1000px;
+    margin-bottom: 10px;
+
+    .memory-card {
+        height: 140px;
+        width: 140px;
+        margin: 10px;
+        position: relative;
+        box-shadow: 1px 1px 0px #999,
+                2px 2px 0px #999,
+                3px 3px 0px #999,
+                4px 4px 0px #999,
+                5px 5px 0px #999,
+                6px 6px 0px #999;
+        border-radius: 4px;
+        border: 2px solid $dark-color;
+        transform-style: preserve-3d;
+        @include easeOut;
+
+        &.card-flipped {
+            transform: rotateY(180deg);
+        }
+
+        .front-face,
+        .back-face {
+            position: absolute;
+            -webkit-perspective: 0;
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translate3d(0,0,0);
+            visibility:visible;
+            backface-visibility: hidden;
+        }
+        .front-face {
+            transform: rotateY(180deg);
+        }
+
+        img {
+            max-width:100%;
+            max-height:100%;
+        }
+    }
+}
+
+.end-game {
+    display: flex;
+    justify-content: center;
+}

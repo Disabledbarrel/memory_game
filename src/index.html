@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Elin's Cool Memory Game</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Memory</h1>
+    </header>
+    <section class="score-board">
+        <div class="game-info">Time: <span id="time-remaining">100</span></div>
+        <div class="game-info">Flips: <span id="flips">0</span></div>
+    </section>
+    <div id="times-up">Time is up!</div>
+    <section class="memory-game">
+
+    </section>
+    <section class="end-game">
+        <button id="reset-btn" onclick="resetGame()">Play again</button>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

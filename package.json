@@ -1,0 +1,23 @@
+{
+  "name": "home_assignment_memory_game",
+  "version": "1.0.0",
+  "description": "My solution for the home assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elin Larsson",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    
+  }
+}

@@ -1,0 +1,47 @@
+// Variables
+
+// Colors
+$bg-color: #1d1d1d;
+$header-color: #6930c3;
+$light-color: #64dfdf;
+$dark-color: #b6bdb4;
+
+// Fonts
+$main-font: 'Teko', sans-serif;
+$head-font: 'Press Start 2P', cursive;
+
+// Functions
+@function setTxtColor($bg-color) {
+    @if (lightness($bg-color) > 100) {
+      @return $dark-color;
+    } @else {
+      @return $light-color;
+    }
+  }
+
+// Mixins Media Queries
+@mixin phone {
+    @media screen and (max-width: 599px) {
+      @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: 600px) and (max-width: 1047px) {
+      @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: 1048px) and (max-width: 1170px) {
+      @content;
+    }
+}
+@mixin desktopXl {
+    @media screen and (min-width: 1171px) {
+      @content;
+    }
+}
+
+// Mixin effects
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
