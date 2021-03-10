@@ -1,4 +1,4 @@
-# Frontend Home Assignment Internship
+# My cool Memory Game
 
 Welcome to my, Elin Larsson's, README for my Memory Game.
 
@@ -31,11 +31,5 @@ Memorygame.js contains the game functionality itself. A single function gameClic
 
 I wanted to use the known and preffered Fisher-Yates algorithm to shuffle the cards on the game board. I put the shuffle function in a separate file, shuffle.js. The source code for this function can be found here (as I did not write the code for shuffeling myself):
 https://github.com/pazguille/shuffle-array/blob/master/index.js
-
-## Some future steps
-* Some refactoring of the code, perhaps split the gameClick-function into multiple functions.
-* Keep count of highscore
-* Perhaps use a bigger game board and get images dynamically for a greater variaty
-* Implement different degrees of difficulty
 
 
